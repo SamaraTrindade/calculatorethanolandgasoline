@@ -1,0 +1,69 @@
+html{
+	text-align: center;
+    font-family: arial;
+	background-color: grey;
+}	
+
+h1{
+	font-size: 28px;
+	background-color:#9ad1d6;
+	margin: auto;
+	font-style: bold;
+	width: 580px;
+	padding: 40px 200px 30px 120px;
+		
+}
+.container {
+	width: 900px;
+	padding: 48px 30px 200px 30px;
+	margin: auto;
+	border: solid 3px;
+	Background-image: url("posto2.jpg")
+	
+}
+.block1{
+	font-size: 19px;
+	color: red;
+	font-family: monospace; 
+	font-style: oblique;
+	width: 240px;
+	padding: 40px 50px 60px 40px;
+	margin: auto;
+	border: solid 7px;
+	overflow: auto;
+	float: left;
+	background-image: url("bomb.jpg");
+
+}
+.block2{
+	font-size: 19px;
+	color: whitesmoke;
+	font-family: monospace; 
+	font-style: oblique;
+	width: 240px;
+	padding: 67px 50px 60px 40px;
+	margin: auto;
+	border: solid 7px;
+	overflow: auto;
+	float: right;
+	background-image: url("cifrao.jpg");
+	
+}
+.calculation{
+	padding: 400px 50px 10px 5px;
+	float: unset;
+}
+
+#result {
+	display:none;
+
+}
+#status {
+	margin-top: 120px;
+	text-align: center;
+	
+}
+#textstatus {
+	margin-left: -60px;
+	
+}

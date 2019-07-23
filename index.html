@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<link type="Text/css" rel="stylesheet" href="estilo.css">
+	<meta charset="UTF-8">
+	<title>Calculadora Flex</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="ask">
+			<div class = "principal"><h1>Calcule o preço da gasolina e do álcool e veja a melhor vantagem</h1>
+			</div>
+			<form name="frmEthanol_km">
+				<div class="block1">
+					<h3>QUANTOS QUILÔMETROS POR LITRO O SEU CARRO FAZ COM ETANOL?</h3>
+					<input type="text" id ="txtEthanolKm" placeholder="Etanol Km/Litro" size="11" name="txtEthanolKm">
+					<input type="reset" value="Apagar">
+					<br>  <br>  <br>
+			</form>
+			<form name="frmGasoline_km">
+				<h3>QUANTOS QUILÔMETROS POR LITRO O SEU CARRO FAZ COM GASOLINA?</h3>
+				<input type="text" id ="txtGasolineKm" placeholder="Gasolina Km/Litro" size="11" name="txtGasolineKm">
+				<input type="reset" value="Apagar">
+				<br>
+
+			</form>
+			</div>
+			</form>
+
+			<form name="frmEthanol_price">
+				<div class="block2">
+					<h3>QUAL O VALOR NA MOEDA REAL DO LITRO DO ETANOL?</h3>
+					<input type="text" id ="txtEthanolPrice" placeholder="Etanol R$/Litro" size="11" name="txtEthanolPrice">
+					<input type="reset" value="Apagar">
+					<br> <br> <br> <br>
+			</form>
+			<form name="frmGasoline_price">
+				<h3>QUAL O VALOR NA MOEDA REAL DO LITRO DA GASOLINA?</h3>
+				<input type="text" id ="txtGasolinePrice" placeholder="Gasolina R$/Litro" size="11" name="txtGasolinePrice">
+				<input type="reset" value="Apagar">
+				<br>
+			</form> 
+			<!-- Foram usados forms em cada campo de txt para que o "reset" apagasse apenas o campo selecionado,
+			com um único form estava apagando todos os campos de entrada. -->
+			</div>
+
+			<div class="calculation">
+				<input type="button" style=" margin-top: 20px; margin-left: 1px; margin-right: 300px;" value = "Calcular a melhor vantagem" onclick="calculate()">
+				 <!-- Ao clicar neste botão, aparece o resultado do campo If/Else no .JS. -->
+				<script src="./calcflex.js"></script>
+				</a>
+			</div>
+		</div>
+		<div id="result">
+
+			<img src="neutro.png" alt="Calculadora Flex" id="status">
+
+			<input type="reset" value= "Limpar" onclick="resetar()">
+			<!-- Usa as funções da "segunda página" para voltar para a primeira, limpando todos os campos. -->
+			<h3 id = "textstatus"></h3>
+			<!-- Deixa a id vazia para poder preencher de acordo com o resultado no .JS. -->
+
+		</div>
+	</div>
+</body>
+
+</html>
